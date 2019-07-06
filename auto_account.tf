@@ -4,9 +4,6 @@ resource "azurerm_automation_account" "auto_account" {
   resource_group_name = "${var.resource_group_name}"
   tags = var.tags
   
-  sku {
-    name = "Basic"
-  }
-
+  sku_name = "Basic"
   
 }
