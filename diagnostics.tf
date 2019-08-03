@@ -10,7 +10,7 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostics_auto" {
             category    = "JobLogs"
             enabled     = true
             retention_policy {
-                days    = 90
+                days    = var.opslogs_retention_period
                 enabled = true
             }
         }
@@ -18,7 +18,7 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostics_auto" {
             category    = "JobStreams"
             enabled     = true
             retention_policy {
-                days    = 90
+                days    = var.opslogs_retention_period
                 enabled = true
             }
         }
@@ -26,7 +26,7 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostics_auto" {
             category    = "DscNodeStatus"
             enabled     = true
             retention_policy {
-                days    = 90
+                days    = var.opslogs_retention_period
                 enabled = true
             }
         }
@@ -35,7 +35,7 @@ resource "azurerm_monitor_diagnostic_setting" "diagnostics_auto" {
             category = "AllMetrics"
 
             retention_policy {
-                days    = 90
+                days    = var.opslogs_retention_period
                 enabled = true
       
                  }

@@ -22,3 +22,8 @@ variable "la_workspace_id" {
 variable "diagnostics_map" {
  description = "map with the diagnostics"
 }
+
+variable "opslogs_retention_period" {
+  description = "(Optional) Number of days to keep operations logs inside storage account"
+  default = 60
+}
