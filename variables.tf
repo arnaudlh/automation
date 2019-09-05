@@ -1,26 +1,24 @@
 variable "resource_group_name" {
-  description = "Resource group for automation account"
+  description = "(Required) Resource group for automation account"
 }
 
 variable "auto_name" {
-    description = "Name for the automation account"
-  
+    description = "(Required) Name for the automation account"
 }
 
 variable "location" {
-    description = "Location for the automation acount"
+    description = "(Required) Location for the automation acount"
 }
 
 variable "tags" {
-    description = "Tags for the automation account"
+    description = "(Required) Tags for the automation account"
 }  
 
-
 variable "la_workspace_id" {
-  
+  description = "(Required) Log Analytics Repository"
 }
 variable "diagnostics_map" {
- description = "map with the diagnostics"
+ description = "(Required) Map with the diagnostics settings."
 }
 
 variable "opslogs_retention_period" {
