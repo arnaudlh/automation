@@ -1,3 +1,4 @@
+[![Build status](https://dev.azure.com/azure-terraform/Blueprints/_apis/build/status/modules/automation)](https://dev.azure.com/azure-terraform/Blueprints/_build/latest?definitionId=0)
 # Creates an Azure Automation Account
 Creates an Azure Automation Account
 
