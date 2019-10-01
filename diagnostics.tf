@@ -1,5 +1,5 @@
 module "diagnostics_automation" {
-  source = "git@ssh.dev.azure.com:v3/azure-terraform/Blueprints/module_diagnostics?ref=v0.1.1"
+  source = "git://github.com/aztfmod/diagnostics.git?ref=v0.1.1"
   
     name                            = azurerm_automation_account.auto_account.name
     resource_id                     = azurerm_automation_account.auto_account.id
